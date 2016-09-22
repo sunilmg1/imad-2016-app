@@ -58,9 +58,9 @@ var htmltemplate =
              <div class="container">
                 <div>
                     <a href="/">Home</a>
-                    <a href="/article-one">article-one</a>
-                    <a href="/article-two">article-two</a>
-                    <a href="/article-three">article-three</a>
+                    <a href="/article-one">Article  1</a>
+                    <a href="/article-two">Article  2</a>
+                    <a href="/article-three">Article  3</a>
                 </div>
                 <hr/>
                 <h3>
