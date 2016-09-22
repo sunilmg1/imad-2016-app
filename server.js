@@ -58,7 +58,7 @@ var htmltemplate =
              <div class="container">
                 <div>
                     <a href="/">Home</a>
-                    <a href="/">article-one</a>
+                    <b href="/">article-one</b>
                 </div>
                 <hr/>
                 <h3>
