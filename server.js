@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var articles = {
-`article-one: {
+`article-one`: {
     title: 'Article one | Sunil George' ,
     heading: "Atricle one",
     date: "Sep 05, 2016" ,
@@ -20,22 +20,25 @@ var articles = {
             </p>
             <p>
                 This is the content of my first article.  This is the content of my first article.  This is the content of my first article. This is the content of my first article.   This is the content of my first article.  This is the content of my first article. This is the content of my first article.   
-            </p>`
+            </p>'
+    
 },
-`article-two: {    title: 'Article two | Sunil George' ,
+`article-two`: {        title: '`'Article two | Sunil George' ,
     heading: "Atricle two",
     date: "Sep 10, 2016" ,
     content: ` 
             <p>
                 This is the content of my second article.  This is the content of my second article.  This is the content of my second article. This is the content of my second article.   This is the second of my first article.  This is the content of my second article. This is the content of my second article.   
-            </p>`},
-`article-three: {    title: 'Article three | Sunil George' ,
+            </p>'
+ },
+`article-three`: {        title: '`'Article three | Sunil George' ,
     heading: "Atricle three",
-    date: "Sep 15, 2016" ,
+    date: "Sep 10, 2016" ,
     content: ` 
             <p>
-                This is the content of my third article.  This is the content of my third article.     
-            </p>`}
+                This is the content of my third article.  This is the content of my third article.  This is the content of my third article. 
+            </p>'
+}
 };
 function createTemplate (data) {
 var title = data.title;
@@ -46,31 +49,31 @@ var content = data.content;
 var htmltemplate = `
 
 <html>
-<head>
-    <title>
-       ${title}
-    </title>
-    <meta name= "viewport" content= "width = device-width, inital-scale =1" />
-          <link href="/ui/style.css" rel="stylesheet" />
-</head>
- <body>
-     <div class="container">
-        <div>
-            <a href="/">Home</a>
+    <head>
+        <title>
+           ${title}
+        </title>
+        <meta name= "viewport" content= "width = device-width, inital-scale =1" />
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+         <div class="container">
+            <div>
+                <a href="/">Home</a>
+            </div>
+            <hr/>
+            <h3>
+                ${heading}
+            </h3>
+            <div>
+                ${date}
+            </div>
+            <div>
+                ${content}
+            
+            </div>
         </div>
-        <hr/>
-        <h3>
-            ${heading}
-        </h3>
-        <div>
-            ${date}
-        </div>
-        <div>
-            ${content}
-        
-        </div>
-    </div>
-</body>
+    </body>
 </html>
 `;
 return htmltemplate;
@@ -82,7 +85,7 @@ app.get('/', function (req, res) {
 });
 app.get('/:articlename', function (req, res) {
     var articlename = req.params.articlename;
-    res.send(createTemplate(articleone));
+
 });
 
 app.get('/ui/style.css', function (req, res) {
