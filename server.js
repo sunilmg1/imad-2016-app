@@ -12,6 +12,9 @@ var articles = {
     date: 'Sep 05,2016',
     content: `<p>
                 This is the content of my second article.  This is the content of my second article.  This is the content of my second article. This is the content of my second article.   This is the content of my second article.  This is the content of my second article. This is the content of my second article.   
+            </p>
+            <p>
+                This is the content of my second article.  This is the content of my second article.  This is the content of my second article. This is the content of my second article.   This is the content of my second article.  This is the content of my second article. This is the content of my second article.   
             </p>`
     
 },
@@ -29,7 +32,7 @@ var articles = {
     heading: 'Article three',
     date: 'Sep 15,2016',
     content: `<p>
-                This is the content of my second article.  This is the content of my second article.  This is the content of my second article. This is the content of my second article.   This is the content of my second article.  This is the content of my second article. This is the content of my second article.   
+                This is the content of my third article.  This is the content of my third article.  This is the content of my third article. This is the content of my third article.   This is the content of my third article.  This is the content of my third article. This is the content of my third article.   
             </p>`
     
 }
