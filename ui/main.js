@@ -3,9 +3,9 @@ var button = document.getElementById('counter');
  
 button.onclick = function(){
  
-
   // create a requset object
   var request = new XMLHttpRequest();
+  
   // capture the response and store it in a variable
   request.onreadystatechange = function(){
     if(request.readystate === XMLHttpRequest.DONE) {
@@ -19,6 +19,6 @@ button.onclick = function(){
   };
 
 // Make a request
-request.open('GET', 'http://sunilmg1.imad.hasura-app.io/counter', true);
+request.open('GET', 'http://sunilmg1.imad.hasura-app.io', true);
 request.send(null);
 };
