@@ -91,11 +91,11 @@ app.get('/counter', function (req,res){
    res.send(counter.toString());
 });
 
-var namest = [];
+var names = [];
 app.get('/submit-name', function(req, res) {
-    var namest = req.query.namest;
+    var name = req.query.names;
     namest.push(name);
-    res.send(JSON.stringify(namest));
+    res.send(JSON.stringify(names));
 });
 
 app.get('/:articleName', function (req, res) {
