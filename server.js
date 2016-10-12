@@ -93,7 +93,7 @@ app.get('/counter', function (req,res){
 
 var namest = [];
 app.get('/submit-name', function(req, res) {
-    var name = req.query.namest;
+    var namest = req.query.namest;
     namest.push(name);
     res.send(JSON.stringify(namest));
 });
